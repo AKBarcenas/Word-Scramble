@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		FAC040241C2D5D7F002A8B63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC040231C2D5D7F002A8B63 /* AppDelegate.swift */; };
 		FAC040261C2D5D7F002A8B63 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC040251C2D5D7F002A8B63 /* MasterViewController.swift */; };
-		FAC040281C2D5D7F002A8B63 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC040271C2D5D7F002A8B63 /* DetailViewController.swift */; };
 		FAC0402B1C2D5D7F002A8B63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC040291C2D5D7F002A8B63 /* Main.storyboard */; };
 		FAC0402D1C2D5D7F002A8B63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC0402C1C2D5D7F002A8B63 /* Assets.xcassets */; };
 		FAC040301C2D5D7F002A8B63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC0402E1C2D5D7F002A8B63 /* LaunchScreen.storyboard */; };
@@ -19,7 +18,6 @@
 		FAC040201C2D5D7F002A8B63 /* Word Scramble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Word Scramble.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC040231C2D5D7F002A8B63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC040251C2D5D7F002A8B63 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		FAC040271C2D5D7F002A8B63 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FAC0402A1C2D5D7F002A8B63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAC0402C1C2D5D7F002A8B63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAC0402F1C2D5D7F002A8B63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +56,6 @@
 			children = (
 				FAC040231C2D5D7F002A8B63 /* AppDelegate.swift */,
 				FAC040251C2D5D7F002A8B63 /* MasterViewController.swift */,
-				FAC040271C2D5D7F002A8B63 /* DetailViewController.swift */,
 				FAC040291C2D5D7F002A8B63 /* Main.storyboard */,
 				FAC0402C1C2D5D7F002A8B63 /* Assets.xcassets */,
 				FAC0402E1C2D5D7F002A8B63 /* LaunchScreen.storyboard */,
@@ -139,7 +136,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAC040281C2D5D7F002A8B63 /* DetailViewController.swift in Sources */,
 				FAC040261C2D5D7F002A8B63 /* MasterViewController.swift in Sources */,
 				FAC040241C2D5D7F002A8B63 /* AppDelegate.swift in Sources */,
 			);
