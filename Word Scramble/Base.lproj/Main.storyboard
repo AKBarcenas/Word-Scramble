@@ -84,10 +84,32 @@
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="DjV-YW-jjY">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="2St-Rv-IbP" kind="relationship" relationship="rootViewController" id="JCl-IO-fOU"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SLD-UC-DBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-45" y="129"/>
+            <point key="canvasLocation" x="-121" y="203"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="hxb-HJ-QMu">
+            <objects>
+                <viewController id="2St-Rv-IbP" customClass="DetailViewController" customModule="Word_Scramble" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fyC-Nd-Y8w"/>
+                        <viewControllerLayoutGuide type="bottom" id="YrX-qp-miX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N2E-ki-Nef">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="42M-tn-96l"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YET-0D-DBt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="704" y="203"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

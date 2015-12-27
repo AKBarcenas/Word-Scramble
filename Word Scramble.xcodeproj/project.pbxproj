@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA6CF0251C2F81FB007EEF5E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CF0241C2F81FB007EEF5E /* DetailViewController.swift */; };
 		FAC040241C2D5D7F002A8B63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC040231C2D5D7F002A8B63 /* AppDelegate.swift */; };
 		FAC040261C2D5D7F002A8B63 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC040251C2D5D7F002A8B63 /* MasterViewController.swift */; };
 		FAC0402B1C2D5D7F002A8B63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC040291C2D5D7F002A8B63 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA6CF0241C2F81FB007EEF5E /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FAC040201C2D5D7F002A8B63 /* Word Scramble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Word Scramble.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC040231C2D5D7F002A8B63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC040251C2D5D7F002A8B63 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				FAC040231C2D5D7F002A8B63 /* AppDelegate.swift */,
 				FAC040251C2D5D7F002A8B63 /* MasterViewController.swift */,
+				FA6CF0241C2F81FB007EEF5E /* DetailViewController.swift */,
 				FAC040291C2D5D7F002A8B63 /* Main.storyboard */,
 				FAC0402C1C2D5D7F002A8B63 /* Assets.xcassets */,
 				FAC0402E1C2D5D7F002A8B63 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA6CF0251C2F81FB007EEF5E /* DetailViewController.swift in Sources */,
 				FAC040261C2D5D7F002A8B63 /* MasterViewController.swift in Sources */,
 				FAC040241C2D5D7F002A8B63 /* AppDelegate.swift in Sources */,
 			);
@@ -287,6 +291,7 @@
 				FAC040361C2D5D7F002A8B63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
