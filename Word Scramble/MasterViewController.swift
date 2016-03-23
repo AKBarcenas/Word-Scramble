@@ -12,10 +12,20 @@ import GameplayKit
 class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
+    
+    // Stores the answers the player has already given.
     var objects = [String]()
+    
+    // Stores all possible words that can be used.
     var allWords = [String]()
 
-
+    /*
+     * Function Name: viewDidLoad
+     * Parameters: None
+     * Purpose: This method loads the word list if it can be found and then it starts the game.
+     * Return Value: None
+     */
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -63,12 +73,27 @@ class MasterViewController: UITableViewController {
         return cell
     }
     
+    /*
+     * Function Name: startGame
+     * Parameters: None
+     * Purpose: This method chooses a random word from the word list that will be used for the game.
+     * Return Value: None
+     */
+    
     func startGame() {
         allWords = GKRandomSource.sharedRandom().arrayByShufflingObjectsInArray(allWords) as! [String]
         title = allWords[0]
         objects.removeAll(keepCapacity: true)
         tableView.reloadData()
     }
+    
+    /*
+     * Function Name: promptForAnswer
+     * Parameters: None
+     * Purpose: This method creates an alert controller that allows the player to enter an answer
+     *   for the game.
+     * Return Value: None
+     */
     
     func promptForAnswer() {
         let ac = UIAlertController(title: "Enter answer", message: nil, preferredStyle: .Alert)
@@ -83,6 +108,14 @@ class MasterViewController: UITableViewController {
         
         presentViewController(ac, animated: true, completion: nil)
     }
+    
+    /*
+     * Function Name: submitAnswer
+     * Parameters: answer - the answer the player enetered for the game.
+     * Purpose: This method checks if the answer the user entered is valid and an error message be shown
+     *   if it is not valid.
+     * Return Value: None
+     */
     
     func submitAnswer(answer: String)  {
         let lowerAnswer = answer.lowercaseString
@@ -122,7 +155,12 @@ class MasterViewController: UITableViewController {
         presentViewController(ac, animated: true, completion: nil)
     }
     
-
+    /*
+     * Function Name: wordIsPossible
+     * Parameters: word - the word we are checking.
+     * Purpose: This method checks if a word can be made from the one chosen for the game.
+     * Return Value: bool
+     */
     
     func wordIsPossible(word: String) -> Bool {
         var tempWord = title!.lowercaseString
@@ -140,9 +178,23 @@ class MasterViewController: UITableViewController {
         return true
     }
     
+    /*
+     * Function Name: wordIsOriginal
+     * Parameters: word - the word we are checking.
+     * Purpose: This method checks if the word has not already been entered.
+     * Return Value: bool
+     */
+    
     func wordIsOriginal(word: String) -> Bool {
         return !objects.contains(word)
     }
+    
+    /*
+     * Function Name: wordIsReal
+     * Parameters: word - the word we are checking.
+     * Purpose: This method checks if the word entered is a real word.
+     * Return Value: None
+     */
     
     func wordIsReal(word: String) -> Bool {
         let checker = UITextChecker()
